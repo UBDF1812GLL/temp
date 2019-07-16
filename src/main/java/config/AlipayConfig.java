@@ -1,0 +1,21 @@
+package config;
+
+
+public class AlipayConfig {
+
+	public static String app_id = "2016100200645663";//�ں�̨��ȡ���������ã�
+	
+	public static String merchant_private_key = "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCwb4bvY4/hmRojNAMhfFSU7MhLfebXqzmGie8Lj1PEJol6xj0TXE6mZ52yRea7QM4U+5sGAomEY/SD85xAShbd7VEVXqCet0QqJJ8hTKFCAtKvTsnDsUxGO6agkmqy72F4fdZ9eYmY3DUuKA7/NSQF+RhTNemAS+vCmhj6YjdwB8jYEhn+3yxDGLShQlSn4ct5wKPbHG6zxvldbqMv6J/RWkoD2Eb9yeXrnb+xMeFeu0N/I+ie4qhVOdcm6wnryC1h9B/yN+iD1W+Im3bQbGgUFk6tZXog+M3k5MpivmnwLa0HpIpyrQ7+YZOXAgX8TsssH9VYCe7RME07ZoqLTco/AgMBAAECggEBAKfSzeTzLS8HtIb7uGannsSxnavBLEzEv8krdsfmI2WWynqQChRaXy2FrcifGOPQtrXaxhCnZSsa8MB6fovgbXPXgqLzCZEu/ZWglATWoSTrDoBWTzDneofrwYlG/FsLvAkimV1st+dAvw0SaYFziLptwCeWRm8UyEKo1U2FEvpptr5ACqD3vnJ0zgFg4OSmfjs7GGGDrx1mgEmWmfYIXSLLUCoagCRYvgtOCS6ctxmP9RmehRL0xSkIP6V8PMaXoK6eJ0TGV2A60Cb59kW4lvfHo4FnvURYd4rytDlvYTa8UTBNjbSwyUYvigntjnaouFeNGQR5GMLPyau2lxYDV1ECgYEA634ONbZhbFDRFTm8pjTW4xvnu+195f4fXFaK0CLkwIWkhs3WPdgHIU1dTaIlgUaFdg/RcXFcNClhDGh0kOZCkYNAHvglWbg33xpJgzlMqmDZB49PqN+/C9Hvumk5NxJoVrIAHf6BgSDTamrIZYUlqHjvL4x+z87dYCRNZeqlVEMCgYEAv8zkKQIA0/xrBSIoR1/iLr07IVpfBKCSo09JU3q8MKj4VeT9RWFaUWsbdYfEhtXkSGoGr9ftTNSXXs5ZButNrencj76gVcBx06yLJMwlO53XXK5roqLEidtDDycdKIZ5RjevdD0uHeoRq8yRDCYl7aH+Y2BAtj2hPOSA1z1O8FUCgYA0HBK84/yu4TtC/SG3jZ23Z6dhuG3RhOgfoK7a273OtEPx6H5t9O2u+tWYpjayYo6Jz3pDJhiHGlj1S+/vWGSGmoqHz9VEAzWp0sFNnlJOqVudBqNT9R7rWKs5jqsweoxIEt9fw7+YeVEPDU4G2O26V/hlhytQhLAL5DyUPtYSzQKBgCuosg77m8ClZp8GhXCpzMyi2oDfF13wRzDRbXmJKKlS7SRwOY6/eFWsMdXxD7U5nvs010zTs/qXMdWs1usSSN5bq4807z5VzhNG5W184sTNSyaXtXyR3Hcc6Ajc+HAvHA/1wQSOoJ7Clz8qE6JWVK/g/g0U7eYN5VP9F67nD775AoGAY8T42Zk+zGjaeip/wONpVoEhb1z304IDjWo9CKjyLj8wpXmD+lpjPzZ2xfWiASU9zWzv0d5TN61HJDaUX/4WDYxcufvkaHOdCPQNq9pwMv29VxtEvQb+k9764xzZ0GDsa3pMSIUuWgaLg34NFOtxrzDdoU+9C1Bk5bAXDvrw9iQ=";//�̳̲鿴��ȡ��ʽ���������ã�
+
+	public static String alipay_public_key = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzZIX1DK2mOLTJ9dmeRFCTplBqlzzLMMUyRIuo6Yr4wjA/AuODqqa97MA7ctcQ/MczfiMQPdAdrdQCEzFo9hKgB7DSQ+AAu/zWzPdjbKCUPA8RBMT5oFtRyWx20zmj22VnpgYpjJ7V+8Ot6SEyh0TMrXU2tcrd2Za1hushXIxpx9UIdyCBiQRZT7v8DXllnyNJQI2G2rO3mPziV9nEBU1FHeBfZSmqtovs016FAmQmdoByhFk1AMlLW5nUmnzWqj/thYHF0NV0JiHMXbgwfP/W2hN/v5IAa/ikM7H31XjpbJUhoTo7lbNzNdFvzUdzwzsK2AYL117sLobmYmr+q7SLQIDAQAB";
+	// 服务器异步通知页面路径  需http://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
+	public static String notify_url = "http://localhost:8080/bookstore/alipayNotifyNotice.action";
+	// 页面跳转同步通知页面路径 需http://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
+	public static String return_url = "http://localhost:8080/bookstore/alipayReturnNotice.action";
+	
+	public static String sign_type = "RSA2";
+	
+	public static String charset = "utf-8";
+	
+	public static String gatewayUrl = "https://openapi.alipaydev.com/gateway.do";
+}
